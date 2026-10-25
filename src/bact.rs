@@ -16,6 +16,16 @@ pub struct Bact {
 
 impl Bact {
     pub fn step(&mut self) {
-        self.pos.y += 1.0;
+        bact.sense();
+        bact.brain.step();
+        bact.act()
+    }
+
+    fn sense(&mut self) {
+
+    }
+
+    fn act(&mut self) {
+
     }
 }
